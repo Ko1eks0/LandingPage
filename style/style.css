@@ -1,0 +1,340 @@
+a {
+	text-decoration: none;
+	color: #131316;
+}
+
+button {
+	font-family: Poppins;
+	border: none;
+	display: inline-flex;
+}
+
+main {
+	padding: 0 96px;
+	max-width: 1248px;
+}
+
+body {
+	margin: auto;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-family: Poppins, sans-serif;
+	color: #131316;
+}
+
+header {
+
+	padding-top: 28px;
+	position: absolute;
+	left: 0;
+	right: 0;
+
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+/* Header */
+
+.logo {
+	display: flex;
+}
+
+.logo .title-logo {
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 32px;
+}
+
+.logo img {
+	margin-left: 8px;
+	width: 15px;
+	height: 12px;
+}
+
+.navigation {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+}
+
+nav {
+	display: inline-flex;
+	align-items: flex-start;
+	gap: 40px;
+}
+
+.navigation .login {
+	margin-left: 40px;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	border-radius: 12px;
+	background: #F5F5F5;
+	padding: 12px 24px;
+}
+
+.navigation .login:hover {
+	cursor: pointer;
+}
+
+/* Title page */
+
+.title {
+	margin-top: 164px;
+	width: 1249px;
+	height: 480px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.title-store {
+	width: 878px;
+}
+
+.title-name {
+	font-feature-settings: 'clig' off, 'liga' off;
+	font-size: 64px;
+	font-weight: 500;
+	line-height: 70px;
+	margin-bottom: 24px;
+}
+
+.title-store p {
+	width: 611px;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.cards {
+	position: relative;
+}
+
+.buttons {
+	margin-top: 40px;
+	display: flex;
+	gap: 16px;
+}
+
+.title .button-start:hover,
+.title .button-demo:hover,
+.card-team-call button:hover {
+	cursor: pointer;
+}
+
+.title .button-start {
+	border-radius: 16px;
+	background: #4891FF;
+	padding: 16px 32px;
+
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 27px;
+}
+
+.title .button-demo {
+	border-radius: 16px;
+	background: #F5F5F5;
+	padding: 16px 32px;
+
+	color: #131316;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 27px;
+	display: flex;
+	align-items: center;
+}
+
+.title .button-demo img {
+	margin-right: 10px;
+}
+
+.img1 {
+	position: absolute;
+	margin-top: 80px;
+}
+
+.img2 {
+	position: absolute;
+	left: 572px;
+	top: 41px;
+}
+
+.card-call {
+	position: absolute;
+	left: 1056px;
+	top: -30px;
+}
+
+.card-team-call {
+	margin: 33px 0;
+	width: 190px;
+	height: 190px;
+	border-radius: 16px;
+	background: #DAF4FE;
+	padding: 29px 24px 25px 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+
+.card-team-call h3 {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 19px;
+}
+
+.card-team-call p {
+	text-align: center;
+	font-size: 10px;
+	font-weight: 400;
+}
+
+.card-team-call span {
+	text-align: center;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 14px;
+}
+
+.card-team-call button {
+	color: #FFF;
+	font-size: 12px;
+	font-weight: 500;
+	width: 142px;
+	padding: 8px 16px;
+	justify-content: center;
+	border-radius: 6px;
+	background: #4891FF;
+}
+
+.container1 {
+	margin-top: 400px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.title-page2 {
+	width: 835px;
+	height: 194px;
+	text-align: center;
+	margin-bottom: -36px;
+}
+
+.title-page2 h2 {
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 58px;
+	letter-spacing: -1px;
+	margin-bottom: 24px;
+}
+
+.title-page2 p {
+	width: 620px;
+	height: 52px;
+	color: #494A4D;
+	text-align: center;
+	font-size: 16px;
+	line-height: 24px;
+	display: inline-flex;
+}
+
+.content-container {
+	display: grid;
+	align-items: start;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-column-gap: 24px;
+	grid-row-gap: 96px;
+}
+
+.content1 {
+	grid-area: 1 / 1;
+}
+
+.content2 {
+	grid-area: 1 / 2;
+}
+
+.content3 {
+	grid-area: 2 / 1;
+}
+
+.content4 {
+	grid-area: 2 / 2;
+}
+
+.content5 {
+	grid-area: 3 / 1;
+}
+
+.content6 {
+	grid-area: 3 / 2;
+}
+
+.content7 {
+	grid-area: 4 / 1;
+}
+
+.content8 {
+	grid-area: 4 / 2;
+}
+
+.content1 {}
+
+.content1 h3 {
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 42px;
+	letter-spacing: -1px;
+	margin: 72px 0 20px;
+}
+
+.content1 p {
+	color: #494A4D;
+	font-size: 16px;
+	line-height: 25px;
+	margin-bottom: 42px;
+	width: 512px;
+}
+
+.content1 table a,
+.content1 a {
+	font-size: 24px;
+	line-height: 28px;
+}
+
+.content1 table {
+	width: 513px;
+}
+
+.content1 table tr:nth-child(1) {
+	border-top: 1px solid #131316;
+	border-bottom: 1px solid #DFDEE2;
+	padding: 20px 0 20px;
+}
+
+.content1 table tr:nth-child(2) {
+	border-bottom: 1px solid #DFDEE2;
+	padding: 20px 0 20px;
+}
+
+.content1 table td {
+	padding: 20px 0 20px;
+}
+
+.content1 .arrow1 {
+	margin-left: 230px;
+}
