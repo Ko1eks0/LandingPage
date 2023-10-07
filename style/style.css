@@ -29,15 +29,15 @@ body {
 }
 
 header {
-
 	padding-top: 28px;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	right: 0;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-
+	background: white;
+	z-index: 1;
 }
 
 /* Header */
@@ -391,8 +391,52 @@ button:hover {
 	transform: translate(-50%, -50%);
 }
 
+.play-button img {
+transition: all 0.3s;
+transform: translate(-50%, -50%);
+}
+
+.play-button{
+	animation: play-button 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) 2s infinite both;
+}
+
+@keyframes play-button {
+	0%,
+	100% {
+	transform: rotate(0deg);
+	transform-origin: 50% 0;
+	}
+	10% {
+	transform: rotate(2deg);
+	}
+	20%,
+	40%,
+	60% {
+	transform: rotate(-4deg);
+	}
+	30%,
+	50%,
+	70% {
+	transform: rotate(4deg);
+	}
+	80% {
+	transform: rotate(-2deg);
+	}
+	90% {
+	transform: rotate(2deg);
+	}
+}
+
 .play-button:hover {
+	
+	
+}
+
+.play-button img:hover {
 	cursor: pointer;
+	width: 114px;
+	height: 104px;
+
 }
 
 .video-section .video-title {

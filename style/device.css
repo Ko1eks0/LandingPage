@@ -24,14 +24,16 @@
 
 	header {
 		padding-top: 28px;
-		position: absolute;
+		position: fixed;
 		left: 0;
 		right: 0;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		margin: 0 16px 0;
-	}
+		background: white;
+		z-index: 1;
+   }
 
 	.navigation {
 		display: none;
@@ -216,6 +218,12 @@
 	.play-button img {
 		width: 40px;
 		height: 40px;
+	}
+
+	.play-button img:hover {
+		cursor: pointer;
+		width: 60px;
+		height: 60px;
 	}
 
 	.started-button {
